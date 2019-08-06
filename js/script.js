@@ -79,7 +79,7 @@ let backgroundColor = [
   'lightcoral',
   'green',
   'blue',
-  'lightgreen',
+  'darkslategray',
   'orange',
   'lightsalmon',
   'darkmagenta'
@@ -127,7 +127,7 @@ function printQuote(){
   }
 
   //Use the randQuote variable to pull photo of the correct author/source and add it to messageHTML string
-  messageHTML += "<img src='photos/" + randQuote.photo + "' alt='" + randQuote.source + "'>"
+  messageHTML += "<img class='photo' src='photos/" + randQuote.photo + "' alt='" + randQuote.source + "'>"
   
   //Assign the contents of messageHTML to the 'quote-box' div in our index.html page
   document.getElementById('quote-box').innerHTML = messageHTML;
