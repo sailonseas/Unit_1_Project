@@ -134,7 +134,7 @@ function printQuote(){
 }
 
 //Set interval to automatically update the quote shown every 7 seconds by calling the 'printQuote' function
-setInterval(printQuote, 7000);
+setInterval(printQuote, 10000);
 
 //On button 'click' - call the 'printQuote' function to update the quote shown on the page
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
